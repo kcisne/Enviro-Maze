@@ -1,6 +1,8 @@
 Obstacles: The Game
 ===
 
+Overview
+---
 Obstacles is a one-player game in which a black robot, "Robot", must complete a course. There are multiple red obstacles, "Blocks", inside the course and the player controls a blue robot, "Player", to clear the path by shooting "Bullets" at the Blocks in order for the Robot to get through and reach the end. Robot is not user controlled and instead uses sensors to move through the course. 
 
 Obstacles uses Elma and Enviro. Elma is an event loop and process for embedded and reactive systems. Enviro is a multi-agent, multi-user simulator environment. More information on Elma and Enviro can be found at the links below:
@@ -103,7 +105,7 @@ The agent 'Robot' is controlled by 'robot.h', which consists of 4 classes:
 - 'MovingForward': State, which moves Robot forward when Robot is at angles '0', '90', '-90'.
 - 'Rotate': State, which rotates Robot when Robot's sensors detect a wall ahead. Robot will rotate to the side, which allows for the robot to contine moving. For example, if the robot reaches a wall and the sensor to the right detects enough space to continue down the path, then Robot will rotate to the right. 
 - 'MyRobotController': StateMachine, which contains Robot's initial state and transitions. 'MovingForward' and 'Rotate' emit events, which tell Robot which transition to make. 
-- 'MyRobot': Declares the Robot class, inherits from Enviro, declares the constructor, and calls macro DECLARE_INTERFACE defined by enviro that sets up the shared library interface. The constructor must have exactly the type signature shown above, and must call the Agent constructor when it is initialized.
+- 'MyRobot': Declares the 'Robot' class, inherits from Enviro, declares the constructor, and calls macro DECLARE_INTERFACE defined by enviro that sets up the shared library interface. The constructor must have exactly the type signature shown above, and must call the Agent constructor when it is initialized.
 
 Player
 ---
@@ -111,21 +113,50 @@ Player
 The agent 'Player' is controlled by 'player.h', which consists of 2 classes:
 
 - 'PlayerController': Process, which gives 'Player' the ability to shoot bullets and to move when keys "w", "s", "a", "d", and "spacebar" are pressed. 
-- 'Player': Declares the Player class, inherits from Enviro, declares the constructor, and calls macro DECLARE_INTERFACE defined by enviro that sets up the shared library interface. The constructor must have exactly the type signature shown above, and must call the Agent constructor when it is initialized.
+- 'Player': Declares the 'Player' class, inherits from Enviro, declares the constructor, and calls macro DECLARE_INTERFACE defined by enviro that sets up the shared library interface. The constructor must have exactly the type signature shown above, and must call the Agent constructor when it is initialized.
 
 Describe how your project was designed, what choices you made, how things are organized, etc.
 
+Finish
+---
 
+The agent 'Finish' is controlled by 'finish.h', which consists of 2 classes:
+
+- 'finishController': Process, which gives 'Finish' (the green block at the end of the course) the ability to remove Robot from the game once Robot reaches the end of the course. (This implementation is still in work.)
+- 'finish': Declares the 'Finish' class, inherits from Enviro, declares the constructor, and calls macro DECLARE_INTERFACE defined by enviro that sets up the shared library interface. The constructor must have exactly the type signature shown above, and must call the Agent constructor when it is initialized.
+
+Block
+---
+
+The agent 'Block' is controlled by 'block.h', which consists of 2 classes:
+
+- 'blockController': Process, which gives 'Block' the ability to disappear when 'Block' is hit by a bullet. 
+- 'block': Declares the 'Block' class, inherits from Enviro, declares the constructor, and calls macro DECLARE_INTERFACE defined by enviro that sets up the shared library interface. The constructor must have exactly the type signature shown above, and must call the Agent constructor when it is initialized.
+
+BUllet
+---
+
+'Bullet' is controlled by 'bullet.h', which consists of 2 classes:
+
+- 'BulletController': Process, which checks for 'Bullet' collisions with 'Block'. This process also removed 'Bullet' after a few seconds.
+- 'Bullet': Declares the 'Bullet' class, inherits from Enviro, declares the constructor, and calls macro DECLARE_INTERFACE defined by enviro that sets up the shared library interface. The constructor must have exactly the type signature shown above, and must call the Agent constructor when it is initialized.
 
 
 Results
 ===
-Describe the results of testing and running your code. Include visuals when possible.
+
+
+
+Challenges
+---
 
 Acknowledgements
 ===
-Mention anyone who helped you and how.
+
+Thank you to Professor Eric Klavins and Victor Cannestro for providing guidance and mentoring throughout the quarter. 
 
 References
 ===
-List all libraries, articles, stack overflow answers, etc. that you used to get your code working.
+
+- [Elma](https://github.com/klavinslab/elma)
+- [Enviro](https://github.com/klavinslab/enviro)

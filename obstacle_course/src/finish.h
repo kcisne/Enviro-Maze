@@ -5,7 +5,8 @@
 
 using namespace enviro;
 
-class finishController : public Process, public AgentInterface {
+class finishController : public Process, public AgentInterface 
+{
 
     public:
     finishController() : Process(), AgentInterface() {}
@@ -33,9 +34,11 @@ class finishController : public Process, public AgentInterface {
 
 };
 
-class finish : public Agent {
+class finish : public Agent 
+{
     public:
-    finish(json spec, World& world) : Agent(spec, world) {
+    finish(json spec, World& world) : Agent(spec, world) 
+    {
         add_process(c);
     }
     private:
