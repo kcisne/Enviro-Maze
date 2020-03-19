@@ -58,10 +58,74 @@ To stop the enviro server, press 'Ctrl-C'.
 How to Play
 ===
 
-Player is controlled via the keyboard, via these keys:
+The user controls Player via the keyboard, via these keys:
 
 - w: forward
 - s: back
 - a: right
 - d: left
 - spacebar: shoot bullets
+
+The user must clear the path for Robot. If the path does not get cleared Robot will not be able to make it to the end. If Robot hits an obstacle and gets stuck, the user will need to restart the game. 
+
+To restart the game, press 'Ctrl-C', then enter 'enviro'.
+
+Architecture
+===
+
+Statics
+---
+
+Obstacles contains statics for the walls, which form the course.
+The position of the statics are defined in 'config.json'.
+
+Agents and References
+---
+
+Obstacles consists of 4 different agents:
+- An agent called 'Robot': The file 'defs/my_robot.json' contains information about the black robot in the game. This information dictates Robot's shape and physical properties.
+- An agent called 'Player': The file 'defs/player.json' contains information about the blue robot in the game. This information dictates Player's shape and physical properties.
+- An agent called 'Finish': The file 'defs/finish.json' contains information about the blue robot in the game. This information dictates Finish's shape and physical properties.
+- An agent called 'Block': The file 'defs/block.json' contains information about the blue robot in the game. This information dictates Block's shape and physical properties.
+
+All agent's are added in the project configuration file, 'config.json', where their positions are defined.
+
+Obstacles also has 1 reference:
+- A reference 'Bullet': The file 'defs/bullet.json' contains information about the bullets being shot from the blue robot in the game. This information dictates Bullet's shape and physical properties.
+
+References are also added in the 'config.json' file.
+
+Robot
+---
+
+The agent 'Robot' is controlled by 'robot.h', which consists of 4 classes:
+
+- 'MovingForward': State, which moves Robot forward when Robot is at angles '0', '90', '-90'.
+- 'Rotate': State, which rotates Robot when Robot's sensors detect a wall ahead. Robot will rotate to the side, which allows for the robot to contine moving. For example, if the robot reaches a wall and the sensor to the right detects enough space to continue down the path, then Robot will rotate to the right. 
+- 'MyRobotController': StateMachine, which contains Robot's initial state and transitions. 'MovingForward' and 'Rotate' emit events, which tell Robot which transition to make. 
+- 'MyRobot': Declares the Robot class, inherits from Enviro, declares the constructor, and calls macro DECLARE_INTERFACE defined by enviro that sets up the shared library interface. The constructor must have exactly the type signature shown above, and must call the Agent constructor when it is initialized.
+
+Player
+---
+
+The agent 'Player' is controlled by 'player.h', which consists of 2 classes:
+
+- 'PlayerController': Process, which gives 'Player' the ability to shoot bullets and to move when keys "w", "s", "a", "d", and "spacebar" are pressed. 
+- 'Player': Declares the Player class, inherits from Enviro, declares the constructor, and calls macro DECLARE_INTERFACE defined by enviro that sets up the shared library interface. The constructor must have exactly the type signature shown above, and must call the Agent constructor when it is initialized.
+
+Describe how your project was designed, what choices you made, how things are organized, etc.
+
+
+
+
+Results
+===
+Describe the results of testing and running your code. Include visuals when possible.
+
+Acknowledgements
+===
+Mention anyone who helped you and how.
+
+References
+===
+List all libraries, articles, stack overflow answers, etc. that you used to get your code working.
