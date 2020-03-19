@@ -10,3 +10,8 @@ Obstacles is a one-player game in which a robot must complete a course. There ar
 From Dockerhub
 ===
 
+To start the docker image environment, do 
+```bash
+docker run -p80:80 -p8765:8765 -v $PWD:/source -it klavins/enviro:v1.61 bash
+```
+This will start a bash prompt from which new projects can be built and the enviro server can be run. 
