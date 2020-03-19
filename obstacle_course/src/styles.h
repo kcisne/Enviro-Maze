@@ -5,6 +5,8 @@
 
 using namespace enviro;
 
+//Defines the bullet's physical information. 
+//This is called by player to define the bullets it shoots.
 const json  BULLET_STYLE = 
                 { 
                    {"fill", "green"}, 

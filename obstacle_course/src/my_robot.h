@@ -17,9 +17,18 @@ namespace
         void entry(const Event& e) {}
         void during() 
         {
+            /*
+            If angle is 0, 90 or -90 degrees 
+            (0, 1.57, -1.57 in radians),move forward.
+            */
             if((angle() > 1.55 && angle() < 1.59) || (angle() > -0.05 && angle() < 0.05) || (angle() > -1.59 && angle() < -1.55))
             {
                 track_velocity(6,0);
+                /*
+                If the robot reaches a wall 
+                and has an opening on one side,
+                then rotate.
+                */
                 if (sensor_value(0) < 20)
                 {
                     if(sensor_value(3.14) > 25)
@@ -52,6 +61,10 @@ namespace
         std::string tick_name_rotate;
     };
 
+    /*
+    Defines when the robot will rotate to the right 
+    and when it will rotate to the left.
+    */
     class Rotate : public State, public AgentInterface 
     {
         public:
@@ -122,6 +135,7 @@ namespace
     class MyRobotController : public StateMachine, public AgentInterface 
     {
         public:
+        //Define state machine initial state and transitions
         MyRobotController() : StateMachine() 
         {
             set_initial(move_forward); 

@@ -12,6 +12,7 @@ class blockController : public Process, public AgentInterface {
 
     void init() 
     {
+        //Check for collisions with bullet. If collisions occur, then hit is true.
         notice_collisions_with("Bullet", [&](Event &e) 
         {
             Agent& bullet = find_agent(e.value()["id"]);
@@ -24,11 +25,13 @@ class blockController : public Process, public AgentInterface {
 
     void start() {}
 
+    //Remove Block.
     void pop() 
     {
         remove_agent(id());
     }    
 
+    //If a collision occurred, hit is true and pop is called.
     void update() 
     {
         if ( hit ) 

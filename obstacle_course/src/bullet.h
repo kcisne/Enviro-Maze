@@ -13,6 +13,7 @@ class BulletController : public Process, public AgentInterface
 
     void init() 
     {
+        //Check for collisions with block and remove it.
         notice_collisions_with("Block", [&](Event &e) 
         {
             remove_agent(id());
@@ -21,6 +22,7 @@ class BulletController : public Process, public AgentInterface
 
     void start() {}
 
+    //Remove bullets after they are shot.
     void update() 
     {
         if ( counter++ > 20 ) 

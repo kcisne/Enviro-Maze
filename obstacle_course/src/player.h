@@ -10,7 +10,10 @@ class PlayerController : public Process, public AgentInterface {
 
     public:
     PlayerController() : Process(), AgentInterface(), v(0), omega(0), firing(false) {}
-
+    /*
+    Defines how the user will interface with the "Player".
+    Uses spacebar, "w", "s", "a" and "d" to move the player.
+    */
     void init() {
         watch("keydown", [&](Event &e) {
             auto k = e.value()["key"].get<std::string>();
@@ -44,13 +47,10 @@ class PlayerController : public Process, public AgentInterface {
                   omega = 0;
             } 
         });
-        //center(x(), y());
-        //zoom(1.5);
     }
     void start() { }
     void update() {
         track_velocity(v,omega,10,400);
-        //center(x(), y());
     }
     void stop() {}
 

@@ -95,7 +95,7 @@ All agent's are added in the project configuration file, `config.json`, where th
 Obstacles also has 1 reference:
 - A reference `Bullet`: The file `defs/bullet.json` contains information about the bullets being shot from the blue robot in the game. This information dictates `Bullet`'s shape and physical properties.
 
-References are also added in the 'config.json' file.
+References are also added in the `config.json` file.
 
 Robot
 ---
@@ -110,10 +110,10 @@ The agent `Robot` is controlled by `robot.h`, which consists of 4 classes:
 Player
 ---
 
-The agent 'Player' is controlled by `player.h`, which consists of 2 classes:
+The agent `Player` is controlled by `player.h`, which consists of 2 classes:
 
 - 'PlayerController': Process, which gives `Player` the ability to shoot bullets and to move when keys "w", "s", "a", "d", and "spacebar" are pressed. 
-- 'Player': Declares the 'Player' class, inherits from Enviro, declares the constructor, and calls macro DECLARE_INTERFACE defined by enviro that sets up the shared library interface. The constructor must have exactly the type signature shown above, and must call the Agent constructor when it is initialized.
+- 'Player': Declares the `Player` class, inherits from Enviro, declares the constructor, and calls macro DECLARE_INTERFACE defined by enviro that sets up the shared library interface. The constructor must have exactly the type signature shown above, and must call the Agent constructor when it is initialized.
 
 Describe how your project was designed, what choices you made, how things are organized, etc.
 
