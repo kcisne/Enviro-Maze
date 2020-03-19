@@ -50,6 +50,11 @@ cd obstacle_course
 make
 enviro
 ```
+
+Navigate to 'http://localhost'. The user should see the obstacle course at this point. 
+
+To stop the enviro server, press 'Ctrl-C'.
+
 How to Play
 ===
 
