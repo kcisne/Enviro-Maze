@@ -13,6 +13,10 @@ class finishController : public Process, public AgentInterface
 
     void init() 
     {
+        /*
+        This is still in-work. Will define whether there is a collision with
+        Robot and remove Robot when collision occurs.
+        */
         notice_collisions_with("Robot", [&](Event &e) 
         {
             remove_agent(id());

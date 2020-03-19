@@ -47,7 +47,6 @@ Execution
 To run the game, type
 
 ```bash
-cd obstacles
 cd obstacle_course
 make
 enviro

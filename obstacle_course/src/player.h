@@ -12,7 +12,8 @@ class PlayerController : public Process, public AgentInterface {
     PlayerController() : Process(), AgentInterface(), v(0), omega(0), firing(false) {}
     /*
     Defines how the user will interface with the "Player".
-    Uses spacebar, "w", "s", "a" and "d" to move the player.
+    Uses spacebar, "w", "s", "a" and "d" to move the player 
+    and to shoot bullets.
     */
     void init() {
         watch("keydown", [&](Event &e) {
@@ -49,7 +50,8 @@ class PlayerController : public Process, public AgentInterface {
         });
     }
     void start() { }
-    void update() {
+    void update() 
+    {
         track_velocity(v,omega,10,400);
     }
     void stop() {}
