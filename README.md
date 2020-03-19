@@ -166,7 +166,7 @@ The following are features that I plan to add:
 Acknowledgements
 ===
 
-Thank you to Professor Eric Klavins and Victor Cannestro for providing guidance and mentoring throughout the quarter. 
+Thank you to Professor Eric Klavins, Victor Cannestro and Rajendra Hathwar for providing their guidance and mentoring. 
 
 References
 ===
