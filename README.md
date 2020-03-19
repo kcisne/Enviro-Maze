@@ -148,7 +148,7 @@ Results
 Overall
 ---
 
-I was able to get 'Robot' to navigate through the entire course without it being controlled by a user, which was my initial goal. I was also able to add a user-interface by adding a second robot, 'Player'. Overall, the results were positive and the agents do what they are supposed to do. 
+I was able to get `Robot` to navigate through the entire course without it being controlled by a user, which was my initial goal. I was also able to add a user-interface by adding a second robot, `Player`. Overall, the results were positive and the agents do what they are supposed to do. 
 
 Challenges
 ---
@@ -162,7 +162,7 @@ The following are features that I plan to add:
 - Have `Robot` disappear when it reaches the end of the course.
 - Give the user the ability to restart the game without having to exit enviro.
 - Add obstacles of different sizes and shapes, which require different amounts of bullets to be destroyed.
-- Have `Robot` start movint only after the user moves `Player` first.
+- Have `Robot` start moving only after the user moves `Player` first.
 
 Acknowledgements
 ===
