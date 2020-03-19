@@ -1,0 +1,455 @@
+{
+
+    "name": "Clear the path for the Robot. Use a, d, w, s to move. Spacebar to fire",
+    "ip": "0.0.0.0",
+    "port": 8765,
+
+    "buttons": [],
+
+    "agents": 
+    [    
+        {
+            "definition": "defs/my_robot.json",
+            "style": { "fill": "black", "stroke": "black" },
+            "position": { "x": -315, "y": -190, "theta": 1.57 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -305, "y": 170, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -335, "y": 100, "theta": 0 } 
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -315, "y": 30, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -325, "y": 0, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -250, "y": 175, "theta": 0 } 
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -220, "y": 155, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -235, "y": 100, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -270, "y": -50, "theta": 0 } 
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -260, "y": -100, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -250, "y": -180, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -215, "y": -170, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -220, "y": -130, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -210, "y": -50, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -205, "y": 0, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -180, "y": 50, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -150, "y": 50, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -150, "y": 160, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -130, "y": -160, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -120, "y": -40, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -100, "y": -30, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -105, "y": -168, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -90, "y": 148, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -80, "y": 178, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -10, "y": 178, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -30, "y": -158, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 0, "y": -110, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": -40, "y": 120, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 10, "y": 50, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 40, "y": 100, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 60, "y": 180, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 30, "y": -70, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 50, "y": -170, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 50, "y": 0, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 120, "y": 20, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 110, "y": -40, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 115, "y": -170, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 125, "y": 175, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 150, "y": 178, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 170, "y": 120, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 200, "y": -169, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 190, "y": 0, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 190, "y": -169, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 150, "y": -120, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 220, "y": -110, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 235, "y": 5, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 250, "y": 176, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 270, "y": 150, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 280, "y": 10, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 290, "y": -90, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 310, "y": 160, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 330, "y": 70, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 345, "y": -70, "theta": 0 }
+        },
+        {
+            "definition": "defs/block.json",
+            "style": { "fill": "red", "stroke": "black" },
+            "position": { "x": 325, "y": -170, "theta": 0 }
+        },
+        {   
+            "definition": "defs/player.json",
+            "style": { "fill": "blue", "stroke": "black", "strokeWidth": "5px", "strokeOpacity": "0.25"},
+            "position": { "x": -315, "y": -140, "theta": 1.57 }
+        },
+        {   
+            "definition": "defs/finish.json",
+            "style": { "fill": "blue", "stroke": "black", "strokeWidth": "5px", "strokeOpacity": "0.25"},
+            "position": { "x": 355, "y": -175, "theta": 0 }
+        }
+    ],
+
+    "references": [
+        {
+            "definition": "defs/bullet.json",
+            "style": { "fill": "green", "stroke": "#888", "strokeWidth": "2px", "strokeOpacity": "0.25" },
+            "position": {"x": -400, "y": -200, "theta": 0 }
+        }
+    ],
+
+    "statics": 
+    [
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": -350, "y": -210 },
+                { "x": -350,  "y": 200 },
+                { "x": -340,  "y": 200 },
+                { "x": -340, "y": -210 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": -350, "y": 200 },
+                { "x": 380,  "y": 200 },
+                { "x": 380,  "y": 210 },
+                { "x": -350, "y": 210 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": -350, "y": -210 },
+                { "x": 380,  "y": -210 },
+                { "x": 380,  "y": -200 },
+                { "x": -350, "y": -200 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": -290, "y": -200 },
+                { "x": -290,  "y": 150 },
+                { "x": -280,  "y": 150 },
+                { "x": -280, "y": -200 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": -230, "y": -150 },
+                { "x": -230,  "y": 210 },
+                { "x": -220,  "y": 210 },
+                { "x": -220, "y": -150 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": -170, "y": -200 },
+                { "x": -170,  "y": 150 },
+                { "x": -160,  "y": 150 },
+                { "x": -160, "y": -200 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": -110, "y": -150 },
+                { "x": -110,  "y": 210 },
+                { "x": -100,  "y": 210 },
+                { "x": -100, "y": -150 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": -50, "y": -200 },
+                { "x": -50,  "y": 150 },
+                { "x": -40,  "y": 150 },
+                { "x": -40, "y": -200 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": 10, "y": -150 },
+                { "x": 10,  "y": 210 },
+                { "x": 20,  "y": 210 },
+                { "x": 20, "y": -150 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": 70, "y": -200 },
+                { "x": 70,  "y": 150 },
+                { "x": 80,  "y": 150 },
+                { "x": 80, "y": -200 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": 130, "y": -150 },
+                { "x": 130,  "y": 210 },
+                { "x": 140,  "y": 210 },
+                { "x": 140, "y": -150 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": 190, "y": -200 },
+                { "x": 190,  "y": 150 },
+                { "x": 200,  "y": 150 },
+                { "x": 200, "y": -200 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": 250, "y": -150 },
+                { "x": 250,  "y": 210 },
+                { "x": 260,  "y": 210 },
+                { "x": 260, "y": -150 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": 310, "y": -200 },
+                { "x": 310,  "y": 150 },
+                { "x": 320,  "y": 150 },
+                { "x": 320, "y": -200 }
+            ]
+        },
+        {
+            "style": { "fill": "lightblue", "stroke": "none" },
+            "shape": 
+            [
+                { "x": 370, "y": -150 },
+                { "x": 370,  "y": 210 },
+                { "x": 380,  "y": 210 },
+                { "x": 380, "y": -150 }
+            ]
+        }
+    ]
+
+}
