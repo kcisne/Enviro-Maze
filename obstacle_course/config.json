@@ -1,6 +1,6 @@
 {
 
-    "name": "Clear the path for the Robot. Use a, d, w, s to move. Spacebar to fire",
+    "name": "Clear the path for the Robot. Destroy the obstacles. Use a, d, w, s to move and spacebar to fire.",
     "ip": "0.0.0.0",
     "port": 8765,
 
